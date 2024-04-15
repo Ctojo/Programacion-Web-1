@@ -1,27 +1,25 @@
-@media screen and (max-width:580px) {
+@media screen and (max-width: 580px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    header{
-        justify-content: center;
-        flex-direction: column;
-    
-
-
-    }
-   
-    header a{
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  header a {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-
-
-    }
-    header nav{
+  }
+  header nav {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
-}
-    #hero{
+    padding-left: 10px;
+  }
+  #hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,58 +27,61 @@
     flex-direction: column;
     padding-bottom: 25px;
     height: 50vh;
-    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(bannercelular.jpg);    
+    background-image: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5)
+      ),
+      url(bannercelular.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
-
-    #hero h1{
+  #hero h1 {
     color: white;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-    #c{
+  }
+  #c {
     display: flex;
     flex-direction: column;
-    }
-    #c div{
+  }
+  #c div {
     text-align: center;
     width: 70%;
-        }
+  }
 
-    #c p{
+  #c p {
     font-size: 15px;
-    }
-    #c h2{
+  }
+  #c h2 {
     text-align: center;
-    }
-    .contenedorsection2{
-        flex-direction: column;
-    }
-    .grilla{
-        display: flex;
-        flex-direction: column;
-    }
-    #s4{
-        display: flex;
-        flex-direction: column-reverse;
-   
-    }
-    #s4 ul li{
-        text-align: start;
-    }
-    #arreglofoto{
-        padding-top: 30px;
-    }
-    .ps2{
-        text-align: center;
-        margin-right: 20px;
-    }
-    .botones{
-        margin-top:30px ;
-        margin-bottom: 30px;
-    }
-}  
+  }
+  .contenedorsection2 {
+    flex-direction: column;
+  }
+  .grilla {
+    display: flex;
+    flex-direction: column;
+  }
+  #s4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #s4 ul li {
+    text-align: start;
+  }
+  #arreglofoto {
+    padding-top: 30px;
+  }
+  .ps2 {
+    text-align: center;
+    margin-right: 20px;
+  }
+  .botones {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
