@@ -46,10 +46,6 @@ h1{
 }
 
 
-section{
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 
 #hero{
@@ -81,10 +77,6 @@ section{
 
 
 #c div h2{
-        max-width: 600px;
-        width: 50%;
-        text-align: initial;
-        padding: 0 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
