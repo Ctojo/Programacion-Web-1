@@ -98,4 +98,15 @@
     footer{
         width: 100%;
     }
+    #arreglofoto{
+        padding-top: 110px;
+    }
+    .ps2{
+        text-align: center;
+        margin-right: 20px;
+    }
+    .botones{
+        margin-top:30px ;
+        margin-bottom: 30px;
+    }
 }  
