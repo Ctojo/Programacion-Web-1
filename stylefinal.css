@@ -217,3 +217,11 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+#botonmain{
+    font-size: 20px;
+}
+.imagenesfinales{
+    width: 400px;
+    height: 400px;
+}
