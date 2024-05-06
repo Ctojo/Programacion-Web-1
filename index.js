@@ -47,10 +47,10 @@ rowproduct.addEventListener('click', (e) => {
         // Eliminar el producto del arreglo
         allProducts = allProducts.filter(product => product.title !== title);
 
-        // Mostrar los productos actualizados en el carrito
+
         showHTML();
 
-        // Recalcular el total de productos y el total a pagar
+
         calculateTotal();
     }
 });

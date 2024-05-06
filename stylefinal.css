@@ -137,6 +137,7 @@ background-color: #020f59;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 20px;
 }
 .conthero{
     position: fixed;
@@ -224,4 +225,8 @@ footer{
 .imagenesfinales{
     width: 400px;
     height: 400px;
+}
+
+.botons2{
+    margin-bottom: 20px;
 }

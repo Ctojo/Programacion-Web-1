@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+header{
+    background-color: #1c31a5;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 50% ;
+    margin-right: 10px;
+    background-color: white;
+    width: 50px;
+}
+
+nav a{
+    color: white;
+}
+
+
+/* BOOTSTRAP */
+.container{
+    margin-top: 20px;
+}
