@@ -159,13 +159,15 @@ h1{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item img{
-    width: 100%;
+.item img {
+    display: flex;
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
+    margin: 0 auto; /* Agrega esta línea para centrar las imágenes */
 }
+
 
 .item figure{
     overflow: hidden;
@@ -195,4 +197,21 @@ h1{
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+}
+
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 580px){
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+
+
+
 }

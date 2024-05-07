@@ -1,7 +1,9 @@
-body{
-    margin: 0;
+body {
+    background-color: #4C75B3 !important;
+    margin: 0px;
     font-family: sans-serif;
 }
+
 
 
 
@@ -30,9 +32,47 @@ header{
 nav a{
     color: white;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
+    
 /* BOOTSTRAP */
 .container{
     margin-top: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 60px;
+}
+
+.card-img-top {
+    height: 300px; /* Establece la altura deseada para todas las imágenes */
+    object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width: 570px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

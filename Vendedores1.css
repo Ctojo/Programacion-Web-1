@@ -1,3 +1,58 @@
+body{
+    font-family: sans-serif;
+}
 #lista{
     list-style-type: none
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#Filtrar-Div h3{
+    border: solid black;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.imagen {
+    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el texto ocupe todo el espacio dentro del contenedor */
+    height: 100%; /* Asegura que el texto ocupe todo el espacio dentro del contenedor */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    z-index: -1; /* Coloca el texto detrás de la imagen */
+}
+
+.contenedor1 {
+    display: inline-block;
+    width: 200px; /* Ancho deseado */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.contenedor1 img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente */
+}
+.Vendedor{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: stretch;
 }
