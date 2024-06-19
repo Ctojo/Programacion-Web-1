@@ -1,0 +1,31 @@
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+img{
+    max-width: auto;
+}
+.container {
+    max-width: 500px; /* Establece el ancho máximo que deseas para la tarjeta */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+.img-highlight:hover {
+    transform: scale(1.05); 
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form id="registrationForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <span id="nombreError" class="error"></span><br><br>
+    
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <span id="apellidoError" class="error"></span><br><br>
+    
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+            <span id="localidadError" class="error"></span><br><br>
+    
+            <!-- Mensaje entre paréntesis para indicar completar en caso de no utilizar tarjeta -->
+            <label for="tarjeta">Número de Tarjeta de Crédito ( NO COMPLETAR EN CASO DE UTILIZAR CBU ):</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+            <span id="tarjetaError" class="error"></span>
+    
+            <!-- Mensaje entre paréntesis para indicar completar en caso de no utilizar CBU -->
+            <label for="cbu">CBU (NO COMPLETAR EN CASO DE UTILIZAR TARJETA ):</label>
+            <input type="text" id="cbu" name="cbu" required>
+            <span id="cbuError" class="error"></span> 
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -230,3 +230,52 @@ footer{
 .botons2{
     margin-bottom: 20px;
 }
+/* Estilos para los botones */
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Padding interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+/* Estilos cuando se pasa el mouse por encima */
+button:hover {
+    background-color: pink; /* Cambio de color de fondo */
+}
+
+/* Estilos para los botones dentro de enlaces */
+a.button {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Heredar color del texto */
+}
+
+a.button:hover {
+    text-decoration: none; /* Sin subrayado al pasar el mouse */
+}
+
+/* Estilos específicos para los botones en diferentes secciones */
+#botonmain {
+    background-color: #008CBA;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 20px;
+}
+
+.botons2 {
+    background-color: #f44336;
+}
+
+.botones {
+    background-color: #555555;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}

@@ -1,0 +1,40 @@
+header{
+    background-color: grey;
+    text-align: center;
+    position: sticky;
+}
+
+
+.grilla3 {  display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "AREA-1 area-2";
+  }
+  
+  .area-2 { grid-area: area-2; }
+  
+  .AREA-1 { grid-area: AREA-1; }
+
+  
+
+  .foto {
+    height: 20em;
+    background-image: url(fotoejemplo.jpg);
+
+    /*  usar backgroud-size: cover*/ 
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor{
+    background-color: aqua;
+}
