@@ -82,7 +82,7 @@ const showHTML = () => {
 
         // Agregar evento de clic para redirigir al formulario
         buyButton.addEventListener('click', () => {
-            window.location.href = 'formulario.html';
+            window.location.href = 'forms.html';
         });
     }
 };
@@ -97,61 +97,40 @@ const calculateTotal = () => {
 
 
 
+//################################//
+//################################//
+//################################//
+//################################//
+//################################//
 
-// Funciones de validación del formulario
-function validateName(input) {
-    const value = input.value;
-    const valid = /^[a-zA-Z\s]*$/.test(value); // Validar solo letras y espacios
 
-    // Mostrar error si hay caracteres no permitidos
-    if (!valid) {
-        input.nextElementSibling.textContent = 'Solo se permiten letras y espacios';
-    } else {
-        input.nextElementSibling.textContent = '';
-    }
-}
-
-function checkNameSurnameEquality() {
-    const nombre = document.getElementById('nombre').value.trim();
-    const apellido = document.getElementById('apellido').value.trim();
-
-    if (nombre.toLowerCase() === apellido.toLowerCase()) {
-        document.getElementById('apellidoError').textContent = 'El nombre y el apellido no pueden ser iguales';
-        return false;
-    }
-    return true;
-}
-
-function validateCBU(input) {
+function validateEmail(input) {
     const value = input.value.trim();
-    const valid = /^\d{22}$/.test(value); // CBU debe tener exactamente 22 dígitos
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value); // Validar formato de correo electrónico
 
     if (!valid) {
-        input.nextElementSibling.textContent = 'El CBU debe contener exactamente 22 dígitos numéricos';
+        input.nextElementSibling.textContent = 'Ingrese un correo electrónico válido';
     } else {
         input.nextElementSibling.textContent = '';
     }
 }
 
-// Evento de envío del formulario
-document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío automático del formulario
-
+function validateForm() {
     let isValid = true;
 
     // Obtener los elementos del formulario
     const nombre = document.getElementById('nombre');
     const apellido = document.getElementById('apellido');
-    const localidad = document.getElementById('localidad');
-    const tarjeta = document.getElementById('tarjeta');
-    const cbu = document.getElementById('cbu');
+    const correo = document.getElementById('correo');
+    const localidad = document.getElementById('localidad').value;
+    const tarjeta = document.getElementById('tarjeta').value;
 
     // Limpiar mensajes de error
     document.getElementById('nombreError').textContent = '';
     document.getElementById('apellidoError').textContent = '';
+    document.getElementById('correoError').textContent = '';
     document.getElementById('localidadError').textContent = '';
     document.getElementById('tarjetaError').textContent = '';
-    document.getElementById('cbuError').textContent = '';
 
     // Validar nombre
     if (!/^[a-zA-Z\s]{3,}$/.test(nombre.value)) {
@@ -165,33 +144,24 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         isValid = false;
     }
 
-    // Validar que el nombre y el apellido no sean iguales
-    if (!checkNameSurnameEquality()) {
+    // Validar correo electrónico
+    validateEmail(correo);
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value.trim())) {
         isValid = false;
     }
 
-    // Validar localidad
-    if (!/^[a-zA-Z\s]{3,}$/.test(localidad.value)) {
-        document.getElementById('localidadError').textContent = 'La localidad debe tener al menos 3 caracteres y solo letras y espacios';
+    // Validar largo de la localidad (mínimo 3 caracteres)
+    if (localidad.length < 3) {
+        document.getElementById('localidadError').textContent = 'La localidad debe tener al menos 3 caracteres';
         isValid = false;
     }
 
     // Validar número de tarjeta (16 dígitos)
     const tarjetaRegex = /^\d{16}$/;
-    if (!tarjetaRegex.test(tarjeta.value)) {
+    if (!tarjetaRegex.test(tarjeta)) {
         document.getElementById('tarjetaError').textContent = 'El número de tarjeta debe tener 16 dígitos';
         isValid = false;
     }
 
-    // Validar CBU (exactamente 22 dígitos numéricos)
-    validateCBU(cbu);
-    if (cbu.value.trim().length !== 22 || !/^\d{22}$/.test(cbu.value.trim())) {
-        isValid = false;
-    }
-
-    // Mostrar mensaje de compra realizada si el formulario es válido
-    if (isValid) {
-        alert('¡Compra realizada con éxito!');
-        // Aquí podrías hacer alguna acción adicional, como enviar los datos a un servidor o redirigir a otra página
-    }
-});
+    return isValid;
+}

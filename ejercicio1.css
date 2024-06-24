@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #1c31a5;
+    align-items: center;
+    padding: 10px;
+}
+
+header li {
+
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+header nav{
+    display: flex;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(WhatsApp\ Image\ 2024-03-25\ at\ 17.54.03.jpeg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(bannercelular.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero{
+    color: white;
+    display: flex;
+}
+
+section{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 70px;
+    flex-direction: row
+}
+
+.a{
+    display: flex;
+    justify-content: space-evenly;
+}
+

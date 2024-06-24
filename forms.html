@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required oninput="validateName(this)">
+            <span id="nombreError" class="error"></span>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required oninput="validateName(this)">
+            <span id="apellidoError" class="error"></span>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required oninput="validateEmail(this)">
+            <span id="correoError" class="error"></span>
+            
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+            <span id="localidadError" class="error"></span>
+            
+            <label for="tarjeta">Número de Tarjeta de Crédito:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required oninput="validateNumber(this)">
+            <span id="tarjetaError" class="error"></span>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

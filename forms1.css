@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center; /* Centrar elementos */
+}
+
+/* Estilos para el formulario */
+#registrationForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+    text-align: center; /* Centrar elementos del formulario */
+}
+
+/* Estilos para el encabezado */
+h2 {
+    color: #007acc;
+    margin-top: 0;
+}
+
+label {
+    color: #005f99;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"], /* Estilos para el campo de correo electrónico */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cce7ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus { /* Estilos para el campo de correo electrónico cuando está enfocado */
+    border-color: #007acc;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f99;
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: #ff4d4d;
+    font-size: 12px;
+}
+
+/* Ajustes de márgenes para el formulario */
+form > *:not(h2) {
+    margin-bottom: 10px;
+}
+
+/* Espaciado de los inputs */
+input[type="text"] + span,
+input[type="email"] + span { /* Espacio para los mensajes de error debajo de los inputs */
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
